@@ -1,1 +1,0 @@
-document.addEventListener("DOMContentLoaded",(function(){var o;o="window location is ".concat(window.location),console.log(o)}));

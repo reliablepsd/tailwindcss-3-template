@@ -1,6 +1,6 @@
 // variable - needed for color control on menu
 $bg-for-header-menu: #f9f9f9;
-$bg-nav-opener: #333;
+$color-for-header-menu: #000;
 
 .nav-opener {
 	display: none;
@@ -18,7 +18,7 @@ $bg-nav-opener: #333;
 	&:before,
 	&:after,
 	span {
-		background-color: $bg-nav-opener;
+		background-color: $color-for-header-menu;
 		border-radius: 3px;
 		position: absolute;
 		top: 50%;
@@ -139,7 +139,7 @@ $bg-nav-opener: #333;
 
 			.sub-arrow {
 				border-style: dashed dashed dashed solid;
-				border-color: transparent transparent transparent $bg-nav-opener;
+				border-color: transparent transparent transparent $color-for-header-menu;
 			}
 		}
 
@@ -184,7 +184,7 @@ $bg-nav-opener: #333;
 			border-width: 5px;
 			transform: translateY(-50%);
 			border-style: solid dashed dashed dashed;
-			border-color: $bg-nav-opener transparent transparent transparent;
+			border-color: $color-for-header-menu transparent transparent transparent;
 
 			@include media("<desktop") {
 				width: 25px;

@@ -1,9 +1,8 @@
-syntax: glob
-._
+._.*
 .DS_Store
 node_modules
-.htaccess
 *.log
 build
 package-lock.json
 tips.scss
+src/scss/helper

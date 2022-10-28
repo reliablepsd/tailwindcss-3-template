@@ -1,0 +1,13 @@
+/******/ (function() { // webpackBootstrap
+var __webpack_exports__ = {};
+document.addEventListener("DOMContentLoaded", function () {
+  test();
+});
+
+function test() {
+  var str = "window location is ".concat(window.location);
+  console.log(str);
+}
+/******/ })()
+;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibW9kdWxlcy5qcyIsIm1hcHBpbmdzIjoiOztBQUFBQSxRQUFRLENBQUNDLGdCQUFULENBQTBCLGtCQUExQixFQUE4QyxZQUFXO0FBQ3hEQyxFQUFBQSxJQUFJO0FBQ0osQ0FGRDs7QUFJQSxTQUFTQSxJQUFULEdBQWdCO0FBQ2YsTUFBSUMsR0FBRyxnQ0FBeUJDLE1BQU0sQ0FBQ0MsUUFBaEMsQ0FBUDtBQUNBQyxFQUFBQSxPQUFPLENBQUNDLEdBQVIsQ0FBWUosR0FBWjtBQUNBLEMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9uZXctdmVyc2lvbi10ZXBsYXRlLy4vc3JjL2pzL21vZHVsZXMuanMiXSwic291cmNlc0NvbnRlbnQiOlsiZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcihcIkRPTUNvbnRlbnRMb2FkZWRcIiwgZnVuY3Rpb24oKSB7XG5cdHRlc3QoKVxufSk7XG5cbmZ1bmN0aW9uIHRlc3QoKSB7XG5cdGxldCBzdHIgPSBgd2luZG93IGxvY2F0aW9uIGlzICR7d2luZG93LmxvY2F0aW9ufWA7XG5cdGNvbnNvbGUubG9nKHN0cik7XG59XG4iXSwibmFtZXMiOlsiZG9jdW1lbnQiLCJhZGRFdmVudExpc3RlbmVyIiwidGVzdCIsInN0ciIsIndpbmRvdyIsImxvY2F0aW9uIiwiY29uc29sZSIsImxvZyJdLCJzb3VyY2VSb290IjoiIn0=

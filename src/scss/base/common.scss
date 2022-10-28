@@ -1,0 +1,80 @@
+//------------------- transition none when resize
+.resize-active {
+	transition: none !important;
+
+	*,
+	*:before,
+	*:after {
+		transition: inherit !important;
+	}
+}
+//------------------- container
+.container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: var(--gutter);
+	padding-right: var(--gutter);
+
+	@each $name, $value in $container {
+		@if ($name == 'default') {
+			max-width: calc(#{$value} + var(--gutter) * 2);
+		} @else {
+			&._#{$name} {
+				max-width: calc(#{$value} + var(--gutter) * 2);
+			}
+		}
+	}
+}
+
+//------------------- footer to bottom
+html,
+body {
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	min-height: 100%;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+// fix bug on some flex block (see example with slider swiper)
+.main,
+.header,
+.footer {
+	min-width: 0;
+}
+
+// header
+.header-menu-wrapper {
+	color: var(--base-text-color);
+	position: relative;
+	padding: 15px 0;
+	z-index: 2;
+	box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.2);
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+
+		@include media("<=tablet") {
+			align-items: center;
+		}
+	}
+}
+
+.page-header {
+	.logo {
+		display: block;
+
+		svg {
+			width: 160px;
+		}
+	}
+}

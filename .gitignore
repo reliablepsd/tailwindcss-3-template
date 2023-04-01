@@ -2,7 +2,7 @@
 .DS_Store
 node_modules
 *.log
-build
+build/
 package-lock.json
 tips.scss
 src/scss/helper

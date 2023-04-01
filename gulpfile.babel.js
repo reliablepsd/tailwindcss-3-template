@@ -67,7 +67,9 @@ function watchServBuild() {
 
 	gulp.watch(g.v.watch.img, gulp.series(imageBuild, g.bsr));
 
-	gulp.watch(g.v.watch.styleTailwind, tailwindcssBuild)
+	// gulp.watch(g.v.watch.styleTailwind, tailwindcssBuild)
+
+	gulp.watch(g.v.watch.styleTailwindScss, tailwindcssBuild)
 
 	gulp.watch(g.v.watch.delet).on("unlink", function (filepath) {
 		var filePathFromSrc = path.relative(
@@ -117,7 +119,9 @@ function watchServerProd() {
 
 	gulp.watch(g.v.watch.img, gulp.series(imageProd, g.bsr));
 
-	gulp.watch(g.v.watch.styleTailwind, tailwindcssProd)
+	// gulp.watch(g.v.watch.styleTailwind, tailwindcssProd)
+
+	gulp.watch(g.v.watch.styleTailwindScss, tailwindcssProd)
 
 	gulp.watch(g.v.watch.delet).on("unlink", function (filepath) {
 		var filePathFromSrc = path.relative(

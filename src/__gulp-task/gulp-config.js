@@ -153,8 +153,9 @@ export const pathVar = {
 	folderProject: folder,
 	src: {
 		html: `${folder.src}*.html`,
-		style: `${folder.src}scss/*.scss`,
+		style: [`${folder.src}scss/*.scss`, `!${folder.src}scss/tailwind.scss`],
 		styleTailwind: `${folder.src}scss/tailwind.css`,
+		styleTailwindScss: `${folder.src}scss/tailwind.scss`,
 		js: [`${folder.src}js/*.js`, `!${folder.src}js/modules.js`],
 		jsModules: `${folder.src}js/modules.js`,
 		img: `${folder.src}img/**/*.${ext.img}`,
@@ -181,9 +182,16 @@ export const pathVar = {
 	},
 	watch: {
 		html: [`${folder.src}*.html`, `${folder.src}template/**/*.html`],
-		style: `${folder.src}scss/**/*.scss`,
+		style: [`${folder.src}scss/*.scss`, `!${folder.src}scss/tailwind.scss`],
 		styleTailwind: [
+			`tailwind.config.cjs`,
 			`${folder.src}scss/tailwind.css`,
+			`${folder.src}*.html`,
+			`${folder.src}template/**/*.html`
+		],
+		styleTailwindScss: [
+			`tailwind.config.cjs`,
+			`${folder.src}scss/tailwind.scss`,
 			`${folder.src}*.html`,
 			`${folder.src}template/**/*.html`
 		],

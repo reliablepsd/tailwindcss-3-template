@@ -3,6 +3,6 @@
 node_modules
 *.log
 build/
-package-lock.json
 tips.scss
 src/scss/helper
+package-lock.json
